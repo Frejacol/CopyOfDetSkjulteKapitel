@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/kurv.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
@@ -16,66 +16,22 @@
         <a href="index.html" class="header-logo">
           <img src="img/Logo.svg" alt="Det Skjulte Kapitel logo" class="logo-img" />
         </a>
-        <nav class="header-nav">
-          <ul class="nav-list">
-            <li><a href="afsnit.html">Afsnit</a></li>
-            <li><a href="anbefalinger.html">Anbefalinger</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="omOs.html">Om Os</a></li>
-            <li><a href="login.html">Tilmeld / Log ind</a></li>
-            <li><a href="kurv.html" class="kurv-link">Kurv<span class="kurv-badge"></span></a></li>
-          </ul>
-        </nav>
       </div>
 
       <div class="header-mobile">
         <a href="index.html" class="header-logo">
           <img src="img/Logo.svg" alt="Det Skjulte Kapitel" class="logo-img" />
         </a>
-        <button class="hamburger" id="menuToggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
       </div>
-      <nav class="mobile-menu" id="mobileMenu">
-        <a href="afsnit.html">Afsnit</a>
-        <a href="anbefalinger.html">Anbefalinger</a>
-        <a href="shop.html">Shop</a>
-        <a href="omOs.html">Om Os</a>
-        <a href="login.html">Tilmeld / Log ind</a>
-        <a href="kurv.html" class="kurv-link">Kurv<span class="kurv-badge"></span></a>
-      </nav>
     </header>
     <main>
-      <h1>Kurv</h1>
-      <div class="kurv-header">
-        <span></span>
-        <span>Produkt</span>
-        <span>Størrelse</span>
-        <span>Antal</span>
-        <span>Pris</span>
-      </div>
-
-      <div id="kurv-produkter"></div>
-
-      <div class="kurv-total">
-        <div class="total-row">
-          <span>Subtotal</span>
-          <span id="subtotal">--- kr.</span>
-        </div>
-        <div class="total-row">
-          <span>Fragt</span>
-          <span id="fragt">49 kr.</span>
-        </div>
-        <hr />
-        <div class="total-row bold">
-          <span>Samlet pris</span>
-          <span id="samlet">--- kr.</span>
-        </div>
-        <a href="koeb.html" class="btn til-betaling">Gå til betaling →</a>
-        <a href="shop.html" class="fortsaet-link">Fortsæt med at handle</a>
-      </div>
+      <section class="afsluttet-section">
+        <h1>Køb gennemført</h1>
+        <h2>Tak for dit køb!</h2>
+        <p>Din ordre er blevet gennemført, og du vil modtage en bekræftelse på e-mail inden for kort tid.</p>
+        <p>Vi håber, du vil nyde dit køb og glæder os til at se dig igen i vores shop!</p>
+        <a href="index.html" class="kob-btn">Tilbage til forsiden →</a>
+      </section>
     </main>
     <footer>
       <div class="footer-inner">
@@ -105,7 +61,7 @@
       </div>
     </footer>
     <script src="js/burger.js"></script>
-    <script src="js/kurvBadge.js"></script>
-    <script src="js/kurv.js"></script>
+    <script src="js/koeb.js"></script>
+  <script src="js/kurvBadge.js"></script>
 </body>
 </html>

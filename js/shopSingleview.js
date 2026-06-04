@@ -63,6 +63,7 @@ function tilføjTilKurv(product) {
   }
 
   localStorage.setItem("kurv", JSON.stringify(kurv));
+  if (typeof opdaterKurvBadge === "function") opdaterKurvBadge();
 
   const knap = document.querySelector("#tilKurvBtn");
   knap.textContent = "Tilføjet! ✓";

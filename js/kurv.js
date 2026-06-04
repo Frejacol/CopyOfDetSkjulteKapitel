@@ -44,6 +44,7 @@ function ændreAntal(index, ændring) {
   }
 
   localStorage.setItem("kurv", JSON.stringify(kurv));
+  if (typeof opdaterKurvBadge === "function") opdaterKurvBadge();
   visKurv();
 }
 
