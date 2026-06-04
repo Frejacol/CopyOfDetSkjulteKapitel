@@ -23,7 +23,7 @@
             <li><a href="shop.html">Shop</a></li>
             <li><a href="omOs.html">Om Os</a></li>
             <li><a href="login.html">Tilmeld / Log ind</a></li>
-            <li><a href="kurv.html">Kurv</a></li>
+            <li><a href="kurv.html" class="kurv-link">Kurv<span class="kurv-badge"></span></a></li>
           </ul>
         </nav>
       </div>
@@ -44,7 +44,7 @@
         <a href="shop.html">Shop</a>
         <a href="omOs.html">Om Os</a>
         <a href="login.html">Tilmeld / Log ind</a>
-        <a href="kurv.html">Kurv</a>
+        <a href="kurv.html" class="kurv-link">Kurv<span class="kurv-badge"></span></a>
       </nav>
     </header>
     <main>
@@ -110,33 +110,22 @@
           </label>
         </div>
 
-        <button class="kob-btn">Gennemfør køb →</button>
+        <a href="afsluttet.html" class="kob-btn">Gennemfør køb →</a>
       </section>
       <hr />
       <section class="ordreoversigt-section">
         <h3>Ordreoversigt</h3>
-        <div class="product-short">
-          <span>Produktnavn x 1</span>
-          <span>--- kr.</span>
-        </div>
-        <div class="product-short">
-          <span>Produktnavn x 1</span>
-          <span>--- kr.</span>
-        </div>
-        <div class="product-short">
-          <span>Produktnavn x 1</span>
-          <span>--- kr.</span>
-        </div>
+        <div id="ordre-produkter"></div>
         <div class="product-short">
           <span>Fragt</span>
-          <span>--- kr.</span>
+          <span id="ordre-fragt">49 kr.</span>
         </div>
       </section>
       <hr />
       <section class="total-section">
         <div class="total">
           <span class="bold">Samlet pris</span>
-          <span>--- kr.</span>
+          <span id="ordre-total">--- kr.</span>
         </div>
       </section>
     </main>
@@ -169,5 +158,6 @@
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/koeb.js"></script>
-  </body>
+  <script src="js/kurvBadge.js"></script>
+</body>
 </html>

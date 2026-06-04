@@ -33,7 +33,7 @@ hr {
   margin: 3rem 0;
 }
 input {
-  font-family: "Helvetica Neue";
+  font-family: "Poppins Light";
   font-weight: 300;
 }
 input[type="checkbox"] {
@@ -74,6 +74,10 @@ input[type="checkbox"] {
   background-color: var(--primary-btn);
   color: var(--text-inverted);
   border: none;
+  display: block;
+  padding: 1em 0;
+  text-align: center;
+  width: 100%;
 }
 .betaling-wrap {
   margin-top: 2.5em;
@@ -96,9 +100,22 @@ input[type="checkbox"] {
   flex-direction: row;
   justify-content: space-between;
   .bold {
-    font-weight: 500;
+    font-family: "Poppins Bold";
   }
 }
+
+.afsluttet-section {
+  h2 {
+    margin-bottom: 0.5em;
+  }
+  p {
+    margin-bottom: 1em;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+
 /* Desktop */
 @media (width>850px) {
   main {
@@ -134,7 +151,7 @@ input[type="checkbox"] {
     }
   }
   .error-message {
-    font-family: "Helvetica Neue";
+    font-family: "Poppins Light";
     font-weight: 300;
     font-size: 0.9rem;
   }
@@ -185,12 +202,28 @@ input[type="checkbox"] {
     gap: 1.5em;
   }
   .kob-btn {
-    width: 366px;
-    height: 75px;
+    display: block;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
   }
   .ordreoversigt-section,
   .total-section {
     width: 80%;
+  }
+  .afsluttet-section {
+    h2 {
+      margin-bottom: 1.5em;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+    h1 {
+      text-align: center;
+    }
+    .kob-btn {
+      margin: 3em 0;
+    }
   }
 }
 
@@ -233,7 +266,7 @@ input[type="checkbox"] {
       font-size: 0.8rem;
     }
     .error-message {
-      font-family: "Helvetica Neue";
+      font-family: "Poppins Light";
       font-weight: 300;
       font-size: 0.8rem;
     }
@@ -265,8 +298,6 @@ input[type="checkbox"] {
   }
   .kob-btn {
     width: 350px;
-    height: 63px;
-    margin: 0;
   }
 }
 /* Valideringsregler */
