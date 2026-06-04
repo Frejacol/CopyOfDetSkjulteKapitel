@@ -23,7 +23,9 @@
             <li><a href="shop.html">Shop</a></li>
             <li><a href="omOs.html">Om Os</a></li>
             <li><a href="login.html">Tilmeld / Log ind</a></li>
-            <li><a href="kurv.html" class="kurv-link">Kurv<span class="kurv-badge"></span></a></li>
+            <li>
+              <a href="kurv.html" class="kurv-link">Kurv<span class="kurv-badge"></span></a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -73,7 +75,8 @@
           <span>Samlet pris</span>
           <span id="samlet">--- kr.</span>
         </div>
-        <a href="koeb.html" class="btn til-betaling">Gå til betaling →</a>
+        <a href="koeb.html" class="btn til-betaling" id="tilBetalingBtn">Gå til betaling →</a>
+        <p id="kurv-error" style="display: none; color: red; text-align: center">Din kurv er tom. Tilføj produkter for at fortsætte til betaling.</p>
         <a href="shop.html" class="fortsaet-link">Fortsæt med at handle</a>
       </div>
     </main>
@@ -107,5 +110,5 @@
     <script src="js/burger.js"></script>
     <script src="js/kurvBadge.js"></script>
     <script src="js/kurv.js"></script>
-</body>
+  </body>
 </html>

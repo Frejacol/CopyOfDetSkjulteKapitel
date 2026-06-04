@@ -48,3 +48,7 @@ function visOrdre() {
 }
 
 visOrdre();
+
+if (kurv.length === 0) {
+  window.location.href = "kurv.html?tom=true";
+}

@@ -55,3 +55,12 @@ function opdaterTotal() {
 }
 
 visKurv();
+
+document.querySelector("#tilBetalingBtn").addEventListener("click", (e) => {
+  const kurv = JSON.parse(localStorage.getItem("kurv")) || [];
+
+  if (kurv.length === 0) {
+    e.preventDefault();
+    document.querySelector("#kurv-error").style.display = "block";
+  }
+});

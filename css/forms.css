@@ -116,6 +116,24 @@ input[type="checkbox"] {
   }
 }
 
+.back-link {
+  border-radius: 20px;
+  background-color: var(--primary-btn);
+  color: var(--text-inverted);
+  border: none;
+  display: inline-block;
+  padding: 1em 1em;
+  margin: 1em 0;
+}
+
+.header-desktop {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 32px;
+  max-width: 1500px;
+}
+
 /* Desktop */
 @media (width>850px) {
   main {
