@@ -23,7 +23,9 @@
             <li><a href="shop.html">Shop</a></li>
             <li><a href="omOs.html">Om Os</a></li>
             <li><a href="login.html">Tilmeld / Log ind</a></li>
-            <li><a href="kurv.html" class="kurv-link">Kurv<span class="kurv-badge"></span></a></li>
+            <li>
+              <a href="kurv.html" class="kurv-link">Kurv<span class="kurv-badge"></span></a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -52,30 +54,29 @@
       <img src="img/Hero.webp" alt="Billede af tre kvinder i et podcast studie, der griner" />
       <h2>Nyeste afsnit</h2>
 
-      <section class="grid-1_1_1">
-        <div class="LogoBeige">
-          <img src="img/LogoBeigeBaggrund.svg" alt="" />
-        </div>
-        <div class="margin">
-          <div>
-            <h3>EP 4 | Månedens bog - Alchemised</h3>
-            <p>13. maj 2026</p>
-            <p>39 minutter</p>
-          </div>
-          <p class="margin2">I denne måneds afsnit dykker vi ned i SoMe-fænomenet Alchemised, booktok-hypen og alt det, der gør bogen til noget, folk enten er besatte af eller stærkt skeptiske overfor...</p>
+      <section class="afsnit-kort">
+        <img class="afsnit-cover" src="img/LogoBeigeBaggrund.svg" alt="cover" />
+
+        <div class="afsnit-info1">
+          <h3>EP 4 | Månedens bog - Alchemised</h3>
+          <p>13. maj 2026</p>
+          <p>39 minutter</p>
+          <p class="afsnit-beskrivelse">I denne måneds afsnit dykker vi ned i SoMe-fænomenet Alchemised, booktok-hypen og alt det, der gør bogen til noget, folk enten er besatte af eller stærkt skeptiske overfor...</p>
         </div>
 
-        <div class="SoMe">
-          <a href="https://open.spotify.com/show/3m8Jab1IPtWVq0r0YH2QnV"><img src="img/Spotify.svg" alt="" /></a>
-          <a href="https://podcasts.apple.com/dk/podcast/det-skjulte-kapitel/id1886661915"><img class="apple" src="img/applepodcast.svg" alt="Apple Podcast" /></a>
-          <a href="https://open.podimo.com/podcast/a7241b3f-1531-4056-aa6a-d502dbbe5295"><img src="img/Podimo.svg" alt="Podimo logo" /></a>
-          <div class="playBtn">
-            <a href="afsnit.html"><img src="img/PlayBtn.svg" alt="" /></a>
+        <div class="afsnit-ikoner">
+          <div class="afsnit-ikoner-top">
+            <a href="https://open.spotify.com/show/3m8Jab1IPtWVq0r0YH2QnV"><img src="img/Spotify.svg" alt="" /></a>
+            <a href="https://podcasts.apple.com/dk/podcast/det-skjulte-kapitel/id1886661915"><img src="img/applepodcast.svg" alt="Apple Podcast" /></a>
+            <a href="https://open.podimo.com/podcast/a7241b3f-1531-4056-aa6a-d502dbbe5295"><img src="img/Podimo.svg" alt="Podimo logo" /></a>
+          </div>
+          <div class="afsnit-btn">
+            <a href="afsnitSingleview.html?id=4" class="btn">Udforsk afsnit</a>
           </div>
         </div>
       </section>
       <h2>Anbefalinger</h2>
-      <section class="grid"></section>
+      <section class="grid1"></section>
     </main>
 
     <footer>
@@ -107,6 +108,6 @@
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/index.js"></script>
-  <script src="js/kurvBadge.js"></script>
-</body>
+    <script src="js/kurvBadge.js"></script>
+  </body>
 </html>

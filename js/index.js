@@ -10,7 +10,7 @@ async function hentAnbefalinger() {
   const boeger = await response.json();
   const raekkefoelge = [12, 7, 10];
   const sorteret = raekkefoelge.map((id) => boeger.find((bog) => bog.id === id));
-  const grid = document.querySelector(".grid");
+  const grid = document.querySelector(".grid1");
 
   console.log("Grid element:", grid);
 

@@ -55,7 +55,8 @@ p,
 .opret-btn,
 label,
 span,
-.btn {
+.btn,
+.btn1 {
   font-family: "Poppins Light";
   font-weight: 300;
   font-size: 1.25rem;
@@ -100,7 +101,8 @@ nav {
   .opret-btn,
   label,
   span,
-  .btn {
+  .btn,
+  .btn1 {
     font-family: "Poppins Light";
     font-weight: 300;
     font-size: 1rem;

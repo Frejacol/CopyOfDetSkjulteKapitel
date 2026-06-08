@@ -34,7 +34,9 @@ function visAfsnit(data) {
           <p>${afsnit.beskrivelse.substring(0, 50)}...</p>
           <p>${afsnit.laengde}</p>
         </div>
-        <div class=PlayBtn2><a href="afsnitSingleview.html?id=${afsnit.id}"><img src="img/PlayBtn.svg" alt="" /></a></div>
+        <div class="afsnit-btn">
+          <a href="afsnitSingleview.html?id=${afsnit.id}" class="btn">Udforsk afsnit</a>
+        </div>
     </section>
       `;
 

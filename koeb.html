@@ -57,7 +57,7 @@
           </div>
           <div class="form-group">
             <label for="postalcode">Postnummer</label>
-            <input type="number" name="postnummer" id="postalcode" required />
+            <input type="text" name="postnummer" id="postalcode" required />
             <p class="error-message">Udfyld venigst feltet</p>
           </div>
           <div class="form-group">
@@ -84,11 +84,22 @@
         <div class="checkbox-group">
           <label for="terms">
             <input type="checkbox" id="terms" name="accept-terms" value="yes" required />
-            Jeg accepterer handelsbetingelserne
+            Jeg accepterer <span id="handelsbetingelser-link">handelsbetingelserne</span>
           </label>
         </div>
 
-        <a href="afsluttet.html" class="kob-btn">Gennemfør køb →</a>
+        <div id="handelsbetingelser-popover" class="popover">
+          <div class="popover-indhold">
+            <button id="luk-popover">✕</button>
+            <h3>Handelsbetingelser</h3>
+            <p>Alle ordrer behandles inden for 2-3 hverdage.</p>
+            <p>Levering sker med PostNord til den oplyste adresse.</p>
+            <p>Returret inden for 14 dage efter modtagelse.</p>
+            <p>Ved spørgsmål kontakt os på detskjultekapitel@gmail.com</p>
+          </div>
+        </div>
+
+        <a href="afsluttet.html" class="kob-btn" id="kobBtn">Gennemfør køb →</a>
       </section>
       <hr />
       <section class="ordreoversigt-section">

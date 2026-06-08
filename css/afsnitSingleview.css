@@ -24,6 +24,10 @@ h2 {
     margin-right: 5em;
   }
 
+  .afsnit-beskrivelse {
+    margin: 3em 5em;
+  }
+
   .single-afsnit img {
     max-width: 100%;
   }
@@ -39,20 +43,27 @@ h2 {
 
   .afsnit-ikoner {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-self: end;
+    height: 100%;
+  }
+
+  .afsnit-ikoner-top {
+    display: flex;
     gap: 1em;
-    margin-left: 2.5em;
-    padding-bottom: 2em;
   }
 
   .afsnit-ikoner a img {
     width: 56px;
     height: auto;
+    border-radius: 50%;
   }
 
-  .PlayBtn2 {
-    place-self: end;
-    margin-top: 9em;
-    margin-right: 2.5em;
+  .playBtn1 {
+    align-self: flex-end;
+    justify-self: end;
+    cursor: pointer;
   }
 
   .afspil {
@@ -95,6 +106,29 @@ h2 {
   .afsnit-left2 img {
     max-width: 70%;
   }
+
+  .afsnit-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn {
+    display: inline-block;
+    text-align: center;
+    padding: 0.5em 1em;
+    background-color: var(--arrow-btn);
+    color: var(--primary-btn);
+    text-decoration: none;
+    border-radius: 20px;
+    width: fit-content;
+  }
+
+  .afsnit-btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
 }
 
 /* Mobile */
@@ -113,7 +147,6 @@ h2 {
     margin-top: 1.5em;
     margin-left: 3em;
     margin-right: 3em;
-
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
@@ -178,7 +211,8 @@ h2 {
 
   .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    gap: 1em;
   }
 
   .afsnit-left2 img {
@@ -213,5 +247,27 @@ h2 {
 
   .playBtn1 img {
     max-width: 100%;
+  }
+
+  .btn {
+    display: inline-block;
+    text-align: center;
+    padding: 0.5em 1em;
+    background-color: var(--arrow-btn);
+    color: var(--primary-btn);
+    text-decoration: none;
+    border-radius: 15px;
+    width: fit-content;
+    font-size: x-small;
+  }
+
+  .afsnit-btn {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .afsnit-beskrivelse {
+    margin: 1em 2em;
   }
 }
