@@ -132,8 +132,8 @@ h2 {
     border-radius: 30px;
     margin-bottom: 5em;
     margin-top: 1.5em;
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -164,7 +164,7 @@ h2 {
   .afsnit-ikoner {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 10px;
     width: 100%;
   }
 
@@ -211,12 +211,39 @@ h2 {
     font-size: x-small;
   }
 
-  .PlayBtn2 img {
-    max-width: 80%;
-  }
-  .PlayBtn2 {
+  .btn {
+    display: inline-block;
     text-align: center;
-    margin-top: 1em;
-    margin-left: 1em;
+    padding: 0.5em 1em;
+    background-color: var(--arrow-btn);
+    color: var(--primary-btn);
+    text-decoration: none;
+    border-radius: 15px;
+    width: fit-content;
+    font-size: x-small;
+  }
+
+  .afsnit-btn {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .btn1 {
+    display: inline-block;
+    text-align: center;
+    padding: 0.5em 1em;
+    background-color: var(--arrow-btn);
+    color: var(--primary-btn);
+    text-decoration: none;
+    border-radius: 15px;
+    width: fit-content;
+  }
+
+  .afsnit-btn1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
   }
 }

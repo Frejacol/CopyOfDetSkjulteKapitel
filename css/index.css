@@ -39,12 +39,6 @@ h2 {
   height: auto;
 }
 
-.playBtn {
-  position: absolute;
-  bottom: 2em;
-  right: 2em;
-}
-
 .LogoBeige {
   padding-top: 3em;
   place-self: center;
@@ -88,6 +82,86 @@ h2 {
   margin-top: 2em;
 }
 
+.afsnit-kolonne {
+  display: flex;
+  align-items: center;
+  background: var(--podcast-card-bg);
+  padding: 0.5em;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.afsnit-kort {
+  background: var(--podcast-card-bg);
+  color: white;
+  padding: 20px;
+  border-radius: 30px;
+  margin-bottom: 5em;
+  margin-top: 1.5em;
+  margin-left: 2em;
+  margin-right: 2em;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.afsnit-cover {
+  max-width: 100%;
+  border-radius: 12px;
+  justify-self: center;
+  padding-top: 1em;
+}
+
+.afsnit-info1 h3 {
+  margin-bottom: 6px;
+}
+
+.afsnit-info1 p {
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.afsnit-beskrivelse {
+  margin-top: 1em;
+  opacity: 0.85;
+}
+
+.afsnit-ikoner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.afsnit-ikoner img {
+  width: 56px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.afsnit {
+  margin: 3em;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5em 1em;
+  background-color: var(--arrow-btn);
+  color: var(--primary-btn);
+  text-decoration: none;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.afsnit-btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
 @media (min-width: 768px) {
   img {
     max-width: 100%;
@@ -116,10 +190,6 @@ h2 {
     max-width: 90%;
   }
 
-  /* .margin {
-    margin-top: 1em;
-  } */
-
   .SoMe {
     padding-left: 3em;
   }
@@ -128,13 +198,7 @@ h2 {
     max-width: 110%;
   }
 
-  .playBtn {
-    place-self: end;
-    margin-top: 9em;
-    margin-right: 2.5em;
-  }
-
-  .grid {
+  .grid1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 5em;
@@ -142,7 +206,7 @@ h2 {
     padding: 0;
   }
 
-  .grid a p {
+  .grid1 a p {
     text-decoration: none;
     background-color: var(--primary-btn);
     color: var(--text-inverted);
@@ -152,7 +216,7 @@ h2 {
     margin-top: 2em;
   }
 
-  .grid h3 {
+  .grid1 h3 {
     margin-top: 2em;
   }
   .AnbefalingCard {
@@ -176,5 +240,99 @@ h2 {
     padding: 0.5em 1em 0.5em 1em;
     position: absolute;
     top: 20px;
+  }
+
+  .afsnit-kort {
+    display: grid;
+    grid-template-columns: 250px 1fr 0.5fr;
+    margin-top: 2.5em;
+    margin-bottom: 4em;
+    padding: 4em;
+    place-self: center;
+    background-color: var(--podcast-card-bg);
+    color: var(--text-inverted);
+    border-radius: 40px;
+    margin-left: 5em;
+    margin-right: 5em;
+    gap: 2em;
+  }
+
+  .afsnit-kort img {
+    max-width: 100%;
+  }
+
+  .afsnit-ikoner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-self: end;
+    height: 100%;
+  }
+
+  .afsnit-ikoner-top {
+    display: flex;
+    gap: 1em;
+  }
+
+  .afsnit-ikoner a img {
+    width: 56px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .afsnit-beskrivelse {
+    margin-top: 1em;
+  }
+
+  .afsnit {
+    margin: 3em;
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+
+  .afsnit-kolonne {
+    display: flex;
+    align-items: center;
+    background: var(--podcast-card-bg);
+    padding: 3em;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    color: white;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 10em;
+  }
+
+  .afsnit-left img {
+    max-width: 70%;
+    border-radius: 8px;
+  }
+
+  .afsnit-info2 {
+    flex: 2;
+  }
+
+  .afsnit-cover {
+    margin: auto;
+  }
+
+  .btn {
+    display: inline-block;
+    text-align: center;
+    padding: 0.5em 1em;
+    background-color: var(--arrow-btn);
+    color: var(--primary-btn);
+    text-decoration: none;
+    border-radius: 20px;
+    width: fit-content;
+  }
+
+  .afsnit-btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
   }
 }
