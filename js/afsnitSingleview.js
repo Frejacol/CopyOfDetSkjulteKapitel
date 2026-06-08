@@ -20,6 +20,11 @@ function visAfsnit(afsnit) {
 
   container.innerHTML = ` 
   <h1>${afsnit.titel}</h1>
+  <section class="afsnit-beskrivelse">
+      <h2>Om afsnittet</h2>
+      <p class="afsnit-beskrivelse">${afsnit.beskrivelse}</p>
+      <p class="afsnit-beskrivelse"> Hør en teaser af afsnittet herunder eller hør hele afsnittet på dine favoritpodcast-platforme.</p>
+    </section>
   <section class="single-afsnit">
       <div class=afsnit-left>
           <img src="${afsnit.coverbillede}" alt="Afsnitcover ${afsnit.titel}" />
@@ -28,16 +33,15 @@ function visAfsnit(afsnit) {
           <h3>${afsnit.titel}</h3>
           <p>${afsnit.udgivelsesdato}</p>
           <p>${afsnit.laengde}</p>
-          <p class="afsnit-beskrivelse">${afsnit.beskrivelse}...</p>
         </div>
         <div class="afsnit-ikoner">
+        <div class="afsnit-ikoner-top">
           <a href="https://open.spotify.com/show/3m8Jab1IPtWVq0r0YH2QnV"><img src="img/Spotify.svg" alt="" /></a>
           <a href="https://podcasts.apple.com/dk/podcast/det-skjulte-kapitel/id1886661915"><img class="apple" src="img/applepodcast.svg" alt="Apple Podcast" /></a>
           <a href="https://open.podimo.com/podcast/a7241b3f-1531-4056-aa6a-d502dbbe5295"><img src="img/Podimo.svg" alt="Podimo logo" /></a>
-          
-          <div class="PlayBtn2"> 
+          </div>
+          <div class="playBtn1"> 
           <img id="playBtn" src="img/PlayBtn.svg" alt="Afspil teaser" />
-          
           <audio id="audioPlayer">
           <source src="${afsnit.lydklip}">
           </audio>
@@ -94,7 +98,9 @@ function visAlleAfsnit(data) {
           <p>${afsnit.beskrivelse.substring(0, 50)}...</p>
           <p>${afsnit.laengde}</p>
         </div>
-        <div class=afspil><a href="afsnitSingleview.html?id=${afsnit.id}"><img src="img/PlayBtn.svg" alt="" /></a></div>
+        <div class="afsnit-btn">
+          <a href="afsnitSingleview.html?id=${afsnit.id}" class="btn">Udforsk afsnit</a>
+        </div>
     </section>
    </div>
       `;

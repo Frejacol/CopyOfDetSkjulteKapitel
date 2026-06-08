@@ -87,7 +87,6 @@ document.querySelector("#kobBtn").addEventListener("click", (e) => {
     terms.closest(".checkbox-group").style.color = "";
   }
 
-  // Hvis ingen fejl, gå videre
   if (!harFejl) {
     localStorage.removeItem("kurv");
     window.location.href = "afsluttet.html";
