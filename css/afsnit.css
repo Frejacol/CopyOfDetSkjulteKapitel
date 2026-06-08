@@ -107,6 +107,23 @@ h2 {
     align-items: flex-end;
     justify-content: flex-end;
   }
+
+  .btn1 {
+    display: inline-block;
+    text-align: center;
+    padding: 0.5em 1em;
+    background-color: var(--arrow-btn);
+    color: var(--primary-btn);
+    text-decoration: none;
+    border-radius: 15px;
+    width: fit-content;
+  }
+
+  .afsnit-btn1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
 }
 
 /* Mobil */
