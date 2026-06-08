@@ -52,3 +52,44 @@ visOrdre();
 if (kurv.length === 0) {
   window.location.href = "kurv.html?tom=true";
 }
+
+document.querySelector("#kobBtn").addEventListener("click", (e) => {
+  e.preventDefault();
+
+  const form = document.querySelector("#kobform");
+  const terms = document.querySelector("#terms");
+  let harFejl = false;
+
+  const inputs = form.querySelectorAll("input[required]");
+  inputs.forEach((input) => {
+    const errorMsg = input.nextElementSibling;
+    if (!input.value.trim()) {
+      errorMsg.style.display = "block";
+      harFejl = true;
+    } else {
+      errorMsg.style.display = "none";
+    }
+  });
+
+  if (!selected) {
+    document.querySelector(".radio-group").style.border = "2px solid red";
+    document.querySelector(".radio-group").style.borderRadius = "8px";
+    document.querySelector(".radio-group").style.padding = "8px";
+    harFejl = true;
+  } else {
+    document.querySelector(".radio-group").style.border = "none";
+  }
+
+  if (!terms.checked) {
+    terms.closest(".checkbox-group").style.color = "red";
+    harFejl = true;
+  } else {
+    terms.closest(".checkbox-group").style.color = "";
+  }
+
+  // Hvis ingen fejl, gå videre
+  if (!harFejl) {
+    localStorage.removeItem("kurv");
+    window.location.href = "afsluttet.html";
+  }
+});
