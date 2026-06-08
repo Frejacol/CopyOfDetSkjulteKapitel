@@ -238,6 +238,17 @@ hr {
   margin: 2em;
 }
 
+.back-link {
+  border-radius: 20px;
+  background-color: var(--primary-btn);
+  color: var(--text-inverted);
+  border: none;
+  display: inline-block;
+  padding: 1em 1em;
+  margin: 1em 2em;
+  font-family: "Poppins Regular";
+}
+
 @media (min-width: 800px) {
   #product {
     display: grid;

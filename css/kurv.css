@@ -132,6 +132,11 @@ hr {
   display: none;
 }
 
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
 @media (min-width: 800px) {
   .kurv-header {
     display: grid;

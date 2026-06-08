@@ -31,7 +31,9 @@ function showProducts(productsarr) {
   }
   productsarr.forEach((product) => {
     productsContainer.innerHTML += `<div class="product">
+    <a href="shopSingleview.html?id=${product.id}">
         <img src="${product.billede}" alt="${product.produktnavn}" />
+      </a>
         <h3>${product.produktnavn}</h3>
         <p>${product.pris} kr.</p>
         <a href="shopSingleview.html?id=${product.id}" class="btn">Se produkt</a>

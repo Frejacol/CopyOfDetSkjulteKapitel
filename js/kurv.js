@@ -19,9 +19,11 @@ function visKurv() {
   kurv.forEach((product, index) => {
     kurvalContainer.innerHTML += `
     <div class="kurv-produkt">
+    <a href="shopSingleview.html?id=${product.id}">
       <img src="${product.billede}" alt="${product.produktnavn}" />
       <div class="kurv-produkt-info">
         <h3>${product.produktnavn}</h3>
+      </a>
       </div>
       <span class="kurv-storrelse">${product.storrelse || "One size"}</span>
       <div class="antal-kontrol">
