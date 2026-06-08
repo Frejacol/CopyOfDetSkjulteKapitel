@@ -36,9 +36,9 @@ function visAfsnit(afsnit) {
         </div>
         <div class="afsnit-ikoner">
         <div class="afsnit-ikoner-top">
-          <a href="https://open.spotify.com/show/3m8Jab1IPtWVq0r0YH2QnV"><img src="img/Spotify.svg" alt="" /></a>
-          <a href="https://podcasts.apple.com/dk/podcast/det-skjulte-kapitel/id1886661915"><img class="apple" src="img/applepodcast.svg" alt="Apple Podcast" /></a>
-          <a href="https://open.podimo.com/podcast/a7241b3f-1531-4056-aa6a-d502dbbe5295"><img src="img/Podimo.svg" alt="Podimo logo" /></a>
+          <a href="https://open.spotify.com/show/3m8Jab1IPtWVq0r0YH2QnV"><img src="img/Spotify.svg" alt="" target="_blank" /></a>
+          <a href="https://podcasts.apple.com/dk/podcast/det-skjulte-kapitel/id1886661915"><img class="apple" src="img/applepodcast.svg" alt="Apple Podcast" target="_blank" /></a>
+          <a href="https://open.podimo.com/podcast/a7241b3f-1531-4056-aa6a-d502dbbe5295"><img src="img/Podimo.svg" alt="Podimo logo" target="_blank" /></a>
           </div>
           <div class="playBtn1"> 
           <img id="playBtn" src="img/PlayBtn.svg" alt="Afspil teaser" />
