@@ -84,8 +84,19 @@
         <div class="checkbox-group">
           <label for="terms">
             <input type="checkbox" id="terms" name="accept-terms" value="yes" required />
-            Jeg accepterer handelsbetingelserne
+            Jeg accepterer <span id="handelsbetingelser-link">handelsbetingelserne</span>
           </label>
+        </div>
+
+        <div id="handelsbetingelser-popover" class="popover">
+          <div class="popover-indhold">
+            <button id="luk-popover">✕</button>
+            <h3>Handelsbetingelser</h3>
+            <p>Alle ordrer behandles inden for 2-3 hverdage.</p>
+            <p>Levering sker med PostNord til den oplyste adresse.</p>
+            <p>Returret inden for 14 dage efter modtagelse.</p>
+            <p>Ved spørgsmål kontakt os på detskjultekapitel@gmail.com</p>
+          </div>
         </div>
 
         <a href="afsluttet.html" class="kob-btn" id="kobBtn">Gennemfør køb →</a>

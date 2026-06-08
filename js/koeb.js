@@ -92,3 +92,17 @@ document.querySelector("#kobBtn").addEventListener("click", (e) => {
     window.location.href = "afsluttet.html";
   }
 });
+
+document.querySelector("#handelsbetingelser-link").addEventListener("click", () => {
+  document.querySelector("#handelsbetingelser-popover").classList.add("aktiv");
+});
+
+document.querySelector("#luk-popover").addEventListener("click", () => {
+  document.querySelector("#handelsbetingelser-popover").classList.remove("aktiv");
+});
+
+document.querySelector("#handelsbetingelser-popover").addEventListener("click", (e) => {
+  if (e.target === e.currentTarget) {
+    e.currentTarget.classList.remove("aktiv");
+  }
+});
